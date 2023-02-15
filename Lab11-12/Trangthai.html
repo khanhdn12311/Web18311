@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+        }
+
+        tr {
+            height: 70px;
+        }
+
+        tr:nth-child(2n) {
+            background-color: #f9fafc;
+        }
+
+        th {
+            text-align: left;
+        }
+
+        .active {
+            color: #3b936c;
+            border: 0px solid #ffffff00;
+            border-radius: 8px;
+            background-color: #e7f8f0;
+            font-size: 14px;
+            font-weight: bold;
+
+            text-align: center;
+            padding: 2px;
+        }
+
+        .offline {
+            color: #28313e;
+            border: 1px solid #ffffff00;
+            border-radius: 8px;
+            background-color: #edeff4;
+            font-size: 14px;
+            font-weight: bold;
+
+            padding: 2px;
+        }
+
+        .design {
+            color: #666bd7;
+            border: 1px solid #ffffff00;
+            border-radius: 8px;
+            background-color: #f2f0fb;
+            font-size: 14px;
+            font-weight: bold;
+
+            padding: 2px;
+        }
+
+        .product {
+            color: #5f8fe1;
+            border: 1px solid #ffffff00;
+            border-radius: 8px;
+            background-color: #e9f3fb;
+            font-size: 14px;
+            font-weight: bold;
+
+            padding: 2px;
+        }
+
+        .operations {
+            color: #cc5377;
+            border: 1px solid #ffffff00;
+            border-radius: 8px;
+            background-color: #f7ecf6;
+            font-size: 14px;
+            font-weight: bold;
+
+            padding: 2px;
+        }
+
+        .soft {
+            color: #69b190;
+            border: 1px solid #ffffff00;
+            border-radius: 8px;
+            background-color: #ecfdf2;
+            font-size: 14px;
+            font-weight: bold;
+
+            padding: 2px;
+        }
+
+        .marketing {
+            color: #5457d5;
+            border: 1px solid #ffffff00;
+            border-radius: 8px;
+            background-color: #edf3fe;
+            font-size: 14px;
+            font-weight: bold;
+
+            padding: 2px;
+        }
+
+        .customer {
+            color: #6c6fd8;
+            border: 1px solid #ffffff00;
+            border-radius: 8px;
+            background-color: #e6eefa;
+            font-size: 14px;
+            font-weight: bold;
+
+            padding: 2px;
+        }
+
+        .email {
+            color: #858d99;
+            font-size: 14px;
+        }
+
+        .bname {
+            color: #858d99;
+            font-size: 14px;
+
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-color: antiquewhite;
+            border-top-right-radius: 7px;
+padding: 20px;
+            align-items: center;
+        }
+
+        .header-left {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+        }
+
+        .header-left h3 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 10px;
+        }
+
+        .header-left span {
+            color: rgb(100, 97, 97);
+            font-weight: 600;
+            border: 0px solid #bbbbbb;
+            border-radius: 8px;
+            background-color: #f2f3f7;
+            font-size: small;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 20px;
+            padding: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header-left">
+        <h3>Team members</h3>
+        <span>48 users</span>
+    </header>
+    <table>
+        <tr>
+            <th style="width: 600px; color: #646f7d; font-size: 13px; font-weight: px;">
+                <input type="checkbox" id="">Name
+            </th>
+            <th style="width: 200px; color: #646f7d; font-size: 13px;">Status</th>
+            <th style="width: 300px; color: #646f7d; font-size: 13px;">Email address</th>
+            <th style="width: 400px; color: #646f7d; font-size: 13px;">Teams</th>
+        </tr>
+        <tr>
+            <td>
+                <a>Tinh</a><br>
+                <a class="bname">@Congtinh</a>
+            </td>
+            <td><label class="active">• Active</label></td>
+            <td class="email">huynhcongtinh@gmail.com</td>
+            <td><a class="design">Design </a><a class="product">Product</a>
+
+            </td>
+
+            <td><i class="fa fa-trash-o" style="font-size:24px"></i></td>
+        </tr>
+        <tr>
+            <td>
+                <a>Khanh</a><br>
+                <a class="bname">@Giakhanh</a>
+            </td>
+            <td><label class="active">• Active</label></td>
+            <td class="email">volegiakhanh1231@gmail.com</td>
+            <td>
+                <a class="product">Product</a>
+                <a class="soft">Software Engineering</a>
+            </td>
+
+            <td><i class="fa fa-trash-o" style="font-size:24px"></i></td>
+        </tr>
+        <tr>
+            <td>
+                <a>Thanh</a><br>
+                <a class="bname">@Ngocthanh</a>
+            </td>
+            <td><a class="offline">• Offline</a></td>
+            <td class="email">lengocthanh@gmail.com</td>
+            <td>
+                <a class="operations">Operations</a>
+                <a class="product">Product</a>
+            </td>
+
+            <td><i class="fa fa-trash-o" style="font-size:24px"></i></td>
+        </tr>
+        <tr>
+            <td>
+                <a>TinhDa</a><br>
+                <a class="bname">@Tinhdapda</a>
+            </td>
+            <td><label class="active">• Active</label></td>
+            <td class="email">tinhdapda@gmail.com</td>
+            <td>
+                <a class="design">Design</a>
+                <a class="product">Product</a>
+                <a class="soft">Software Engineering</a>
+            </td>
+            <td><i class="fa fa-trash-o" style="font-size:24px"></i></td>
+</tr>
+        <tr>
+            <td>
+                <a>Vlgk</a><br>
+                <a class="bname">@Vlgk515303</a>
+            </td>
+            <td><a class="offline">• Offline</a></td>
+            <td class="email">vlgk515303@gmail.com</td>
+            <td>
+                <a class="operations">Operations</a>
+                <a class="design">Design</a>
+            </td>
+            <td><i class="fa fa-trash-o" style="font-size:24px"></i>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a>Thien</a><br>
+                <a class="bname">@nThienthichdua</a>
+            </td>
+            <td><label class="active">• Active</label></td>
+            <td class="email">thienthichdua@gmail.com</td>
+            <td>
+                <a class="design">Design</a>
+                <a class="marketing">Marketing</a>
+            </td>
+            <td><i class="fa fa-trash-o" style="font-size:24px"></i></td>
+        </tr>
+        <tr>
+            <td>
+                <a>Tai</a><br>
+                <a class="bname">@Taitungtang</a>
+            </td>
+            <td><label class="active">• Active</label></td>
+            <td class="email">taitungtang@gmail.com</td>
+            <td>
+                <a class="customer">Customer Success</a>
+                <a class="operations">Operations</a>
+                <a class="marketing">Marketing</a>    
+            </td>
+            <td><i class="fa fa-trash-o" style="font-size:24px"></i></td>
+        </tr>
+        <tr>
+            <td>
+                <a>Huy</a><br>
+                <a class="bname">@Huyhonghach</a>
+            </td>
+            <td><label class="active">• Active</label></td>
+            <td class="email">huyhunghan@gmail.com</td>
+            <td>
+                <a class="design">Design</a>
+                <a class="product">Product</a>
+            </td>
+            <td><i class="fa fa-trash-o" style="font-size:24px"></i></td>
+        </tr>        
+    </table>
+</body>
+</html>
